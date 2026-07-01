@@ -1,20 +1,8 @@
-"""
-IDX Exchange - Week 1 Deliverable
-Monthly Dataset Aggregation
-
-This script:
-1. Reads all CRMLSListing*.csv and CRMLSSold*.csv files.
-2. Concatenates them into two combined datasets.
-3. Filters both datasets to PropertyType == "Residential".
-4. Saves the combined Residential CSV files.
-5. Saves a row count summary.
-"""
 
 from pathlib import Path
 import pandas as pd
 
 
-# Change this path if your CSV files are stored somewhere else.
 CSV_FOLDER = Path("csv")
 OUTPUT_FOLDER = Path("output")
 
