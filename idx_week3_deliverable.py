@@ -1,23 +1,3 @@
-"""
-IDX Exchange Data Analyst Internship
-Weeks 2-3 Deliverable: Dataset Structuring, Validation, and Mortgage Rate Enrichment
-
-This script performs the required Week 3 tasks:
-1. Loads combined sold and listing datasets.
-2. Documents unique PropertyType values.
-3. Filters both datasets to PropertyType == 'Residential'.
-4. Creates null-count and missing percentage reports.
-5. Flags columns with more than 90% missing values.
-6. Creates numeric distribution summaries for ClosePrice, LivingArea, and DaysOnMarket.
-7. Fetches the FRED MORTGAGE30US mortgage rate series.
-8. Resamples weekly mortgage rates to monthly averages.
-9. Merges mortgage rates onto sold and listing datasets using year_month.
-10. Saves all required output CSV files.
-
-Expected input files in the same folder:
-- combined_sold.csv
-- combined_listings.csv
-"""
 
 import pandas as pd
 
