@@ -1,22 +1,4 @@
-"""
-IDX Exchange Data Analyst Internship
-Weeks 4-5 Deliverable: Data Cleaning and Preparation
 
-This script performs the required Week 4 cleaning tasks:
-1. Loads the Week 3 mortgage-enriched sold and listing datasets.
-2. Converts required date fields to datetime format.
-3. Converts key numeric fields to numeric format.
-4. Adds invalid numeric value flags.
-5. Adds date consistency flags.
-6. Adds geographic quality flags.
-7. Removes clearly invalid core numeric records for the cleaned output dataset.
-8. Saves cleaned analysis-ready CSV files.
-9. Saves before/after row counts, date flag counts, geographic quality summary, and data type confirmation reports.
-
-Expected input files in the same folder:
-- week3_sold_with_mortgage_rates.csv
-- week3_listings_with_mortgage_rates.csv
-"""
 
 import pandas as pd
 
